@@ -29,7 +29,7 @@
 
 ## Updating
 
-git submodule update --remote --merge
+__git submodule update --remote --merge__
 
 More information on Git submodules can be found here:
 
