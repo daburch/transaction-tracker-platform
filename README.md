@@ -1,6 +1,6 @@
 # Transaction tracker platform
 
-## Setup and usage intructions:
+## Setup and usage intructions
 
 1. Install Git:
 
@@ -25,3 +25,12 @@
 5. Run the platform:
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  __docker-compose up -d__
+
+
+## Updating
+
+git submodule update --remote --merge
+
+More information on Git submodules can be found here:
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; https://git-scm.com/book/en/v2/Git-Tools-Submodules
