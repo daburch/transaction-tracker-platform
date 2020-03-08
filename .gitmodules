@@ -1,0 +1,9 @@
+[submodule "transaction-tracker-database"]
+	path = transaction-tracker-database
+	url = https://github.com/daburch/transaction-tracker-database.git
+[submodule "transaction-tracker-api"]
+	path = transaction-tracker-api
+	url = https://github.com/daburch/transaction-tracker-api.git
+[submodule "transaction-tracker-web"]
+	path = transaction-tracker-web
+	url = https://github.com/daburch/transaction-tracker-web.git
