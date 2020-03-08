@@ -1,4 +1,4 @@
 Transaction tracker platform
 
 usage:
-* docker-compose -d up
+* docker-compose up -d

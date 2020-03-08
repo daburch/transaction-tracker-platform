@@ -4,8 +4,9 @@ services:
 
   transaction-tracker-web:
     image: transaction-tracker-web
+    container_name: transaction-tracker-web
     volumes:
-      - '../transaction-tracker-api:/app'
+      - '../transaction-tracker-web:/app'
       - '/app/node_modules'
     ports:
       - '3000:3000'
