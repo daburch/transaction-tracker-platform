@@ -2,35 +2,35 @@ version: '3.7'
 
 services:
 
-  react-transactions-tracker:
-    image: react-transactions-tracker
+  transaction-tracker-web:
+    image: transaction-tracker-web
     volumes:
-      - '../react-transactions-tracker:/app'
+      - '../transaction-tracker-api:/app'
       - '/app/node_modules'
     ports:
       - '3000:3000'
     environment:
       - NODE_ENV=development
     depends_on:
-      - springboot-transactions-api
+      - transaction-tracker-api
 
-  springboot-transactions-api:
-    image: springboot-transactions-api
-    container_name: springboot-transactions-api
+  transaction-tracker-api:
+    image: transaction-tracker-api
+    container_name: transaction-tracker-api
     restart: on-failure
     ports: 
       - 8089:8080
     depends_on:
-      - database
+      - transaction-tracker-database
     healthcheck:
       test: curl --fail -s http://localhost:8089/ || exit 1
       interval: 5s
       timeout: 2s
       retries: 3
 
-  database:
-    image: transactions-tracker-database-mysql
-    container_name: transactions-tracker-database-mysql
+  transaction-tracker-database:
+    image: transaction-tracker-database-mysql
+    container_name: transaction-tracker-database-mysql
     environment:
       MYSQL_ROOT_PASSWORD: 'password'
     ports:
