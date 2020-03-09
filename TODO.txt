@@ -1,0 +1,2 @@
+update MySQL password setup:
+  use MYSQL_RANDOM_ROOT_PASSWORD and MYSQL_ONETIME_PASSWORD variables then change the password once the server is up
