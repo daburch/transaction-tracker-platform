@@ -32,7 +32,7 @@ services:
       retries: 3
 
   transaction-tracker-database:
-    build: ./transaction-tracker-database/.
+    build: ./transaction-tracker-database/MySQL/.
     image: transaction-tracker-database-mysql
     container_name: transaction-tracker-database-mysql
     environment:
